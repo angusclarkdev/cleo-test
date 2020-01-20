@@ -1,4 +1,4 @@
-import React, { Children } from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components'
 import receipt from './assets/receipt.svg'
 import money from './assets/money.svg'
@@ -28,29 +28,28 @@ const StyledLi = styled.li`
   background-color: ${props => props.isActive ? 'white': 'rgb(220,220,220, 0.5)'};
   `
 
-const Tab = ({ label, isActive, children }) => {
+const Tab = ({ label, isActive, onClick }) => {
+  const icon = label === 'Bills' ? receipt : money
   return (
     <>
       <StyledUl>
-      <StyledLi isActive={isActive}>
-        <img src={ label === 'Bills' ? receipt : money} alt='icon representing label' />
+      <StyledLi isActive={isActive} onClick={onClick}>
+        <img src={icon} alt='icon representing label' />
         <StyledSpan>
           { label }
         </StyledSpan>
       </StyledLi>
       </StyledUl>
-      { children }
     </>
   )
 }
-const Tabs = () => {
+
+const Tabs = ({ activeTab, toggleActiveTab }) => {
     return (
       <>
-      <Tab label='Bills' isActive={true}>
-        Heres a list of your bills
+      <Tab label='Bills' isActive={activeTab === 0} onClick={() => toggleActiveTab(0)}>
       </Tab>
-      <Tab label='Spending'>
-        Heres a list of your spending
+      <Tab label='Spending' isActive={activeTab === 1} onClick={() => toggleActiveTab(1)}>
       </Tab>
       </>
     )
