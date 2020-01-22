@@ -17,8 +17,8 @@ const StyledSpan = styled.span`
 
 const StyledLi = styled.li`
   border: 1px solid rgb(220,220,220, 0.1);
-  border-top-color: ${props => props.isActive ? 'rgb(0,250,154)' : ''};
-  border-top-width: 2px;
+  border-top-color: ${props => props.isActive ? 'rgb(0,0,255)' : ''};
+  border-top-width: 3px;
   padding: 1rem 4rem;
   margin-left: -1px;
   border-bottom: none;
