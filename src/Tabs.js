@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styled from 'styled-components'
 import receipt from './assets/receipt.svg'
 import money from './assets/money.svg'
@@ -12,20 +12,22 @@ const StyledUl = styled.ul`
 const StyledSpan = styled.span`
   font-size: 1.6rem;
   display: block;
-  color: rgba(0, 0, 0, 0.8);
+  color: ${props => props.theme.colours.darkGrey};
 `
 
 const StyledLi = styled.li`
-  border: 1px solid rgb(220,220,220, 0.1);
-  border-top-color: ${props => props.isActive ? 'rgb(0,0,255)' : ''};
+  border-width: 1px;
+  border-style: solid;
+  border-color: ${props => props.theme.colours.borderGrey};
+  border-top-color: ${props => props.isActive ? props.theme.colours.blue : ''};
   border-top-width: 3px;
+  border-bottom: none;
   padding: 1rem 4rem;
   margin-left: -1px;
-  border-bottom: none;
   list-style: none;
   text-align: center;
   cursor: pointer;
-  background-color: ${props => props.isActive ? 'white': 'rgb(220,220,220, 0.5)'};
+  background-color: ${props => props.isActive ? 'white': props.theme.colours.lightBlue};
   `
 
 const Tab = ({ label, isActive, onClick }) => {

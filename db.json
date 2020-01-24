@@ -4,7 +4,7 @@
       "categoryId": 1,
       "iconUrl": "https://pbs.twimg.com/profile_images/915824582455627776/nsyHCFq9.jpg",
       "id": "5a5caa1efe33900100fd8ed5",
-      "isBill": true,
+      "isBill": false,
       "name": "Vodafone",
       "transactions": [
         {
@@ -38,7 +38,7 @@
       "categoryId": 2,
       "iconUrl": "https://pbs.twimg.com/profile_images/787957563463725056/duc0g4fp.jpg",
       "id": "5a5caa8efe33900100fd8ed6",
-      "isBill": true,
+      "isBill": false,
       "name": "Sky TV",
       "transactions": [
         {
@@ -72,7 +72,7 @@
       "categoryId": 3,
       "iconUrl": "https://pbs.twimg.com/profile_images/1026445460179955712/BWHmmzXt.jpg",
       "id": "5a5caad4fe33900100fd8ed7",
-      "isBill": true,
+      "isBill": false,
       "name": "HSBC Mortgage",
       "transactions": [
         {
@@ -106,7 +106,7 @@
       "categoryId": 2,
       "iconUrl": "https://pbs.twimg.com/profile_images/877554474776244224/Hx0FkfBI.jpg",
       "id": "5a5cab18fe33900100fd8ed8",
-      "isBill": true,
+      "isBill": false,
       "name": "Netflix",
       "transactions": [
         {
@@ -174,7 +174,7 @@
       "categoryId": 3,
       "iconUrl": "https://pbs.twimg.com/profile_images/984840751929544704/iv3Y8YNC.jpg",
       "id": "5a5cab88fe33900100fd8eda",
-      "isBill": true,
+      "isBill": false,
       "name": "AMEX Payment",
       "transactions": [
         {
@@ -276,7 +276,7 @@
       "categoryId": 4,
       "iconUrl": "https://pbs.twimg.com/profile_images/1045783102000230400/TPLLaqYR.jpg",
       "id": "328card4fe33900100fd8ail",
-      "isBill": true,
+      "isBill": false,
       "name": "Uber",
       "transactions": [
         {
