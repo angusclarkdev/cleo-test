@@ -1,6 +1,5 @@
 const BASE_URL = 'http://localhost:3002/bills'
 
-// unit test this
 export const fetchBills = async () => {
   try {
     const res = await fetch(BASE_URL)

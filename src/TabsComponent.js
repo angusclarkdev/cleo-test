@@ -22,7 +22,7 @@ const TabsComponent = () => {
   },[])
   
   const fetchBillsAndUpdateState = async () => {
-    updateBills( await fetchBills() )
+    updateBills(await fetchBills())
   }
 
     return (

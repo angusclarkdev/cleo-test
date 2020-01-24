@@ -1,4 +1,3 @@
-import React from 'react';
 import { fetchBills } from '../services/billsService';
 
 describe('fetchBills()', () => {
